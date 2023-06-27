@@ -34,9 +34,10 @@ p {
   width: 100px;
   height: 100px;
 }
-
+    
 <style>
-  .center-image {
-    text-align: center;
+  .image-container {
+    display: flex;
+    justify-content: center;
   }
 </style>
