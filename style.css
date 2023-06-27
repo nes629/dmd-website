@@ -1,7 +1,7 @@
 h1{
   text-align: center;
 }
-  .word-list, .insta, .fb,  {
+  .word-list {
     display: flex;
     justify-content: center;
   }
@@ -89,5 +89,5 @@ p {
   }
 
   .slideshow-image.active {
-    opacity: 1;
+    opacity: 3;
   }

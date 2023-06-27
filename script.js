@@ -1,6 +1,6 @@
 <script>
   window.addEventListener("DOMContentLoaded", function() {
-    var images = document.querySelectorAll(".slideshow-image");
+    var images = document.querySelectorAll(".slideshow-container img");
     var currentImageIndex = 0;
 
     function showNextImage() {
@@ -12,3 +12,5 @@
     setInterval(showNextImage, 2000); // Adjust the duration (in milliseconds) between each image transition
   });
 </script>
+
+
