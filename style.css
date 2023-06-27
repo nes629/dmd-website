@@ -31,6 +31,12 @@ p {
   text-align: center;
 }
 .weibo{
-  width: 10px;
-  height: 10px;
+  width: 100px;
+  height: 100px;
 }
+
+<style>
+  .center-image {
+    text-align: center;
+  }
+</style>
