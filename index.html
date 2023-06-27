@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var instaImage = document.querySelector(".insta");
+        instaImage.addEventListener("click", function() {
+          window.location.href = "https://www.instagram.com/drunkmonkeydistro/";
+        });
+
+        var fbImage = document.querySelector(".fb");
+        fbImage.addEventListener("click", function() {
+          window.location.href = "https://www.facebook.com/drunkmonkeydistro/";
+        });
+      });
+    </script>
   </head>
   <body>
     <h1>Drunk Monkey Distribution</h1>
     <p class="established">Est. </p>
-   <a href="https://www.instagram.com/drunkmonkeydistro/">
-   <img src="https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="instagram" class="insta">
-   <img src="https://www.iconninja.com/files/245/45/195/facebook-media-social-like-network-fb-icon.svg" alt="fb" class="fb">
+    <a href="https://www.instagram.com/drunkmonkeydistro/">
+      <img src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png" alt="instagram" class="insta">
+    </a>
+    <a href="https://www.facebook.com/drunkmonkeydistro/">
+      <img src="https://cdn.icon-icons.com/icons2/91/PNG/512/facebook_16423.png" alt="fb" class="fb">
     </a>
     <hr>
     <div class="slideshow-container">
