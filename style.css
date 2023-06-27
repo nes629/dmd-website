@@ -23,9 +23,10 @@ p {
 .insta {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  align-items: center;
 }
 .fb {
   width: 100px;
   height: 100px;
+  text-align: center;
 }
