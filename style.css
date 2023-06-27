@@ -1,6 +1,22 @@
-h1, .insta, .abus, .cous, .dealers{
+h1{
   text-align: center;
 }
+  .word-list, .insta, .fb,  {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .word-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .word-list li {
+    margin: 0 10px;
+  }
+
 hr{
   height: 2px;
   background-color: blck;
@@ -21,18 +37,18 @@ p {
 }
 
 .insta {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   align-items: center;
 }
 .fb {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   text-align: center;
 }
 .weibo{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 {
 	box-sizing: border-box;
