@@ -119,6 +119,6 @@ img1 {
   height: 100vh; /* Adjust the height as needed */
 }
 
-#email-form {
+.email-form {
   text-align: center;
 }
