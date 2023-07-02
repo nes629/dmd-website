@@ -1,23 +1,23 @@
-h1{
+h1 {
   text-align: center;
 }
-  .word-list {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .word-list ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  .word-list li {
-    margin: 0 10px;
-  }
+.word-list {
+  display: flex;
+  justify-content: center;
+}
 
-hr{
+.word-list ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.word-list li {
+  margin: 0 10px;
+}
+
+hr {
   height: 2px;
   background-color: blck;
   border-color: black;
@@ -26,9 +26,9 @@ p {
   text-align: center;
   font-style: italic;
 }
- img1{
-   width: 1px;
- }
+img1 {
+  width: 1px;
+}
 
 .container {
   display: flex;
@@ -40,19 +40,30 @@ p {
   width: 50px;
   height: 50px;
   align-items: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 .fb {
   width: 50px;
   height: 50px;
   text-align: center;
+  border: none;
+  outline: none;
 }
-.weibo{
+.weibo {
   width: 50px;
   height: 50px;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
-.douyin{
+.douyin {
   width: 50px;
   height: 50px;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 /* banner */
 .banner {
@@ -111,7 +122,3 @@ p {
 #email-form {
   text-align: center;
 }
-
-
-
-
