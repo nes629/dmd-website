@@ -101,6 +101,16 @@ p {
 .slide.active {
   display: block;
 }
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+#email-form {
+  text-align: center;
+}
 
 
 
