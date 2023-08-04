@@ -87,12 +87,6 @@ hr {
   flex-wrap: wrap; /* Allows images to wrap to the next row */
   justify-content: center;
 }
-/* banner */
-.banner {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
 
 .form-container {
   display: flex;
@@ -101,10 +95,3 @@ hr {
   height: 100vh; /* Adjust the height as needed */
 }
 
-.email-form {
-  text-align: center;
-}
-.pyzel{
-  width: 100px;
-  height: 50px;
-}
