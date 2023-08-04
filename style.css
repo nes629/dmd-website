@@ -35,10 +35,18 @@ img1 {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-.dmd{
-  width: 50px;
-  height: 50px;
+.dmd {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto; /* Add this to center horizontally */
+  display: flex;
+  justify-content: center; /* Add this to center horizontally within the element */
+  align-items: center; /* Add this to center vertically within the element */
 }
+hr {
+  height: 2px;
+  background-color: blck;
+  border-color: black;
 .insta {
   width: 50px;
   height: 50px;
