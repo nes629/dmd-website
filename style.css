@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
 }
+
 .word-list {
   display: flex;
   justify-content: center;
@@ -19,28 +20,33 @@ h1 {
 
 hr {
   height: 2px;
-  background-color: blck;
+  background-color: white; /* Fixed typo here */
   border-color: black;
 }
+
 p {
   text-align: center;
   font-style: italic;
 }
+
 img1 {
   width: 1px;
 }
-.bi{
+
+.bi {
   max-width: 100%;
- height: auto;
+  height: auto;
 }
-h2{
+
+h2 {
   text-align: center;
-} 
-.container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
 }
+
+.container {
+   display: flex;
+  justify-content: center; 
+}
+
 .dmd {
   width: 300px;
   height: 300px;
@@ -49,49 +55,16 @@ h2{
   justify-content: center; /* Add this to center horizontally within the element */
   align-items: center; /* Add this to center vertically within the element */
 }
-hr {
-  height: 2px;
-  background-color: blck;
-  border-color: black;
-.insta {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  display: flex;
-  flex-wrap: wrap; /* Allows images to wrap to the next row */
-  justify-content: center;
- 
-}
-.fb {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  display: flex;
-  flex-wrap: wrap; /* Allows images to wrap to the next row */
-  justify-content: center;
-  
-}
-.weibo {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  display: flex;
-  flex-wrap: wrap; /* Allows images to wrap to the next row */
-  justify-content: center;
-}
+
+/* Removed duplicate properties for .insta, .fb, .weibo, .douyin */
+
+.insta,
+.fb,
+.weibo,
 .douyin {
   width: 50px;
   height: 50px;
   display: flex;
-  display: flex;
   flex-wrap: wrap; /* Allows images to wrap to the next row */
   justify-content: center;
 }
-
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Adjust the height as needed */
-}
-
