@@ -68,3 +68,12 @@ h2 {
   flex-wrap: wrap; /* Allows images to wrap to the next row */
   justify-content: center;
 }
+a {
+  color: black;
+}
+a:hover {
+  color: grey;
+}
+a:active {
+  color: grey;
+}
