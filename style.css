@@ -58,16 +58,34 @@ h2 {
 
 /* Removed duplicate properties for .insta, .fb, .weibo, .douyin */
 
+/* ... (your existing CSS rules) ... */
+@keyframes fallIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Center the content horizontally */
+    margin: 20px 0; /* Adjust spacing as needed */
+    animation: fallIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
 .insta,
 .fb,
 .weibo,
 .douyin {
   width: 50px;
   height: 50px;
-  display: flex;
-  flex-wrap: wrap; /* Allows images to wrap to the next row */
-  justify-content: center;
+  margin: 0 10px;
 }
+
 a {
   color: black;
 }
@@ -77,3 +95,20 @@ a:hover {
 a:active {
   color: grey;
 }
+@keyframes fallIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.banner {
+    text-align: center; /* Center the content horizontally */
+    margin: 20px 0; /* Adjust spacing as needed */
+    animation: fallIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
