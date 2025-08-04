@@ -1,80 +1,96 @@
-h1 {
-  text-align: center;
+/* === GENERAL FONT & RESET === */
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
-.word-list {
+/* === BRANCHES NAVIGATION === */
+.branches-nav {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.branches-nav ul {
   display: flex;
-  justify-content: center;
-}
-
-.word-list ul {
+  justify-content: space-around; /* Spread out */
   list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem; /* Slightly bigger */
+}
+
+.branches-nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.branches-nav ul li a:hover,
+.branches-nav ul li a:focus {
+  background-color: #ddd;
+  color: #555;
+  cursor: pointer;
+}
+
+/* === LOGO IMAGE BOX FULL WIDTH === */
+.logo-container {
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 25px 0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 15px;
 }
 
-.word-list li {
-  margin: 0 10px;
+.logo-img {
+  width: 250px; /* Smaller image */
+  height: auto;
+  border-radius: 15px;
+  /* No hover scale */
 }
 
+/* === HORIZONTAL RULE === */
 hr {
   height: 2px;
-  background-color: white; /* Fixed typo here */
-  border-color: black;
+  background-color: #ccc;
+  border: none;
+  margin: 20px 0;
 }
 
-p {
+/* === BANNER === */
+.banner {
   text-align: center;
-  font-style: italic;
+  margin: 20px 0;
+  animation: fallIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
-img1 {
-  width: 1px;
-}
-
-.bi {
+.banner .bi {
   max-width: 100%;
   height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-h2 {
-  text-align: center;
-}
-
-.container {
-   display: flex;
-  justify-content: center; 
-}
-
-.dmd {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto; /* Add this to center horizontally */
-  display: flex;
-  justify-content: center; /* Add this to center horizontally within the element */
-  align-items: center; /* Add this to center vertically within the element */
-}
-
-/* Removed duplicate properties for .insta, .fb, .weibo, .douyin */
-
-/* ... (your existing CSS rules) ... */
-@keyframes fallIn {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+/* === SOCIAL ICONS === */
 .social-icons {
   display: flex;
   justify-content: center;
-  text-align: center; /* Center the content horizontally */
-    margin: 20px 0; /* Adjust spacing as needed */
-    animation: fallIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  margin: 20px 0;
+  animation: fallIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
 .insta,
@@ -84,31 +100,82 @@ h2 {
   width: 50px;
   height: 50px;
   margin: 0 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-a {
-  color: black;
+.insta:hover,
+.fb:hover,
+.weibo:hover,
+.douyin:hover {
+  transform: scale(1.1);
 }
-a:hover {
-  color: grey;
+
+/* === ABOUT SECTIONS === */
+.about-sections {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
 }
-a:active {
-  color: grey;
+
+.about-section {
+  flex: 1 1 45%;
+  background: white;
+  padding: 25px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+  cursor: default;
 }
+
+.about-section:hover {
+  background-color: #f0f0f0;
+}
+
+/* Section titles */
+.about-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0 40px 0;
+  font-style: italic;
+  color: #555;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+/* === ANIMATION === */
 @keyframes fallIn {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.banner {
-    text-align: center; /* Center the content horizontally */
-    margin: 20px 0; /* Adjust spacing as needed */
-    animation: fallIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+/* === RESPONSIVE === */
+@media (max-width: 800px) {
+  .about-sections {
+    flex-direction: column;
+  }
+  .about-section {
+    flex: 1 1 100%;
+  }
+  .branches-nav ul {
+    font-size: 1rem;
+  }
 }
-
