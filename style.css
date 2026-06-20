@@ -57,7 +57,7 @@ body {
 }
 
 .logo-img {
-  width: 250px; /* Smaller image */
+  width: 150px; /* Smaller image */
   height: auto;
   border-radius: 15px;
   /* No hover scale */
